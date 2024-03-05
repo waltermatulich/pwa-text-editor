@@ -1,7 +1,4 @@
-// Your client-side JavaScript code goes here
-// Use modern JavaScript features
 
-// Example of using IndexedDB
 const openRequest = indexedDB.open("text-editor-db", 1);
 
 openRequest.onupgradeneeded = function(event) {
@@ -18,7 +15,6 @@ openRequest.onsuccess = function(event) {
   console.log("IndexedDB database opened successfully");
 };
 
-// Example of registering service worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/service-worker.js')
